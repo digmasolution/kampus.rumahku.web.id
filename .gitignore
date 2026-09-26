@@ -1,4 +1,9 @@
 # ========================
+# AI Agent Coordination (internal logs, not for public repo)
+# ========================
+.agents/
+
+# ========================
 # Deployment Symlinks & VPS Artifacts
 # ========================
 current
