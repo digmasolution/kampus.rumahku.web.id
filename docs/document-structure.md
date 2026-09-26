@@ -1,0 +1,97 @@
+# Document Structure Analysis
+
+## Paragraphs and Headings
+- Catatan :
+- CapaianPembelajaran Lulusan PRODI (CPL-PRODI) adalah kemampuan yang dimiliki oleh setiap lulusan PRODI yang merupakan  internalisasi dari sikap, penguasaan pengetahuan dan ketrampilan sesuai dengan jenjang prodinya yang diperoleh melalui proses pembelajaran.
+- CPL yang dibebankan pada mata kuliah adalah beberapa capaian pembelajaran lulusan program studi (CPL-PRODI) yang digunakan  untuk pembentukan/pengembangan sebuah mata kuliah yang terdiri dari aspek sikap, ketrampilan umum, ketrampilan khusus dan pengetahuan.
+- CP Mata kuliah (CPMK) adalah kemampuan yang dijabarkan secara spesifik dari CPL yang dibebankan pada mata kuliah, dan bersifat spesifik terhadap bahan kajian atau materi pembelajaran matakuliah tersebut.
+- CPL yang dibebankan pada mata kuliah, dan merupakan kemampuan akhir yang direncanakan pada tiap tahap pembelajaran, dan bersifat spesifik terhadap materi pembelajaran matakuliah tersebut.
+- Sub-CP Mata kuliah (Sub-CPMK) adalah kemampuan yang dijabarkan secara spesifik dari CPMK yang dapat diukur atau diamati dan   merupakan kemampuan akhir yang direncanakan pada tiap tahap pembelajaran, dan bersifat spesifik terhadap materi pembelajaran mata kuliah tersebut.
+- Indikator penilaian kemampuan dalam proses maupun hasil belajar mahasiswa adalah pernyataan spesifik dan terukur yang mengidentifikasi kemampuan atau kinerja hasil belajar mahasiswa yang disertai bukti-bukti.
+- Kreteria Penilaian adalah patokan yang digunakan sebagai ukuran atau tolok ukur ketercapaian pembelajaran dalam penilaian berdasarkan indikator-indikator yang telah ditetapkan. Kreteriapenilaian merupakan pedoman bagi penilai agar penilaian konsisten dan tidak bias. Kreteria dapat berupa kuantitatif ataupun kualitatif.
+- Bentukpenilaian: tes dan non-tes.
+- Bentukpembelajaran:Kuliah, Responsi, Tutorial, Seminar atau yang setara, Praktikum, Praktik Studio, PraktikBengkel, PraktikLapangan, Penelitian, PengabdianKepada Masyarakat dan/ataubentukpembelajaran lain yang setara.
+- MetodePembelajaran: Small Group Discussion, Role-Play & Simulation, Discovery Learning, Self-Directed Learning, Cooperative Learning, Collaborative Learning, Contextual Learning, Project Based Learning, dan metodelainnyaygsetara.
+- MateriPembelajaranadalahrincianatauuraiandaribahankajianygdapatdisajikandalambentukbeberapapokok dan sub-pokokbahasan.
+- Bobot penilaian adalah prosentasi penilaian terhadap setiap pencapaian sub-CPMK yang besarnya proposional dengan tingkat kesulitan pencapaian sub-CPMK tsb., dan totalnya 100%.
+- TM=TatapMuka, PT=Penugasanterstruktur, BM=Belajarmandiri.
+
+## Tables
+### Table 1
+- Rows: 70
+- Columns: 30
+  - Row 0: , UNIVERSITAS CIPTA MANDIRI PROGRAM STUDI PENDIDIKAN MATEMATIKA, Kode Dokumen RPS-    /PMAT/FKIP/UNCM/2025
+  - Row 1: RENCANA PEMBELAJARAN SEMESTER
+  - Row 2: MATA KULIAH (MK), KODE, Rumpun MK, BOBOT (sks) 2 SKS, SEMESTER, Tanggal Penyusunan
+  - Row 3: LOGIKA MATEMATIKA, MKK209, Mata Kuliah Keahlian, T=2, P=0, 2, 13 Maret 2024
+  - Row 4: OTORISASI, Pengembang RPS, Koordinator RMK, Ketua Program Studi
+  - Row 5: OTORISASI, Dian Kristanti, M.Pd., Dazrullisa, M.Pd.
+  - Row 6: Capaian Pembelajaran  (CP), CPL-PRODI Capaian Pembelajaran Lulusan Program Studi
+  - Row 7: Capaian Pembelajaran  (CP), CPL1, Berkontribusi dalam peningkatan mutu kehidupan bermasyarakat, berbangsa, bernegara, dan kemajuan peradaban berdasarkan Pancasila (S3)
+  - Row 8: Capaian Pembelajaran  (CP), CPL2, Menghargai keanekaragaman budaya, pandangan, agama, dan kepercayaan, serta pendapat atau temuan orisinal orang lain (S5)
+  - Row 9: Capaian Pembelajaran  (CP), CPL3, Menguasai konsep matematika yang diperlukan untuk merencanakan dan melaksanakan pembelajaran di satuan pendidikan dasar dan menengah (P1)
+  - Row 10: Capaian Pembelajaran  (CP), CPL4, Mampu mengkaji implikasi pengembangan atau implementasi ilmu pengetahuan teknologi yang memperhatikan dan menerapkan nilai humaniora sesuai dengan keahliannya berdasarkan kaidah, tata cara dan etika ilmiah dalam rangka menghasilkan solusi, gagasan, desain atau kritik seni, menyusun deskripsi saintifik hasil kajiannya dalam bentuk skripsi atau laporan tugas akhir, dan mengunggahnya dalam laman perguruan tinggi (KU3)
+  - Row 11: Capaian Pembelajaran  (CP), CPL5, Mampu mengaplikasikan konsep dan prinsip didaktik-pedagogis matematika serta keilmuan matematika untuk merencanakan pembelajaran dengan memanfaatkan IPTEKS yang berorierentasi pada kecakapan hidup (life skills) (KK1)
+  - Row 12: Capaian Pembelajaran  (CP), CPMK (Capaian Pembelajaran Lulusan Yang Dibebankan Pada Mata Kuliah)
+  - Row 13: Capaian Pembelajaran  (CP), CPMK1, Mahasiswa dapat mengimplementasikan IPTEKS terkait logika matematika dengan berkontribusi dalam peningkatan mutu kehidupan bermasyarakat, berbangsa, bernegara, dan kemajuan peradaban berdasarkan Pancasila (S3)
+  - Row 14: Capaian Pembelajaran  (CP), CPMK2, Mahasiswa menghargai keanekaragaman budaya, pandangan, agama, dan kepercayaan, serta pendapat atau temuan orisinal orang lain (S5)
+  - Row 15: Capaian Pembelajaran  (CP), CPMK3, Menguasai konsep logika matematika yang diperlukan untuk merencanakan dan melaksanakan pembelajaran di satuan pendidikan dasar dan menengah (P1)
+  - Row 16: Capaian Pembelajaran  (CP), CPMK4, Mampu mengkaji implikasi pengembangan atau implementasi ilmu pengetahuan teknologi yang memperhatikan dan menerapkan nilai humaniora sesuai dengan keahliannya berdasarkan kaidah, tata cara dan etika ilmiah dalam rangka menghasilkan solusi, gagasan, desain atau kritik seni, menyusun deskripsi saintifik hasil kajiannya dalam perencanaan pembelajaran terkait materi logika matematika (KU3)
+  - Row 17: Capaian Pembelajaran  (CP), CPMK5, Mampu mengaplikasikan konsep dan prinsip didaktik-pedagogis matematika serta keilmuan matematika untuk merencanakan pembelajaran yang berkaitan dengan logika matematika dengan memanfaatkan IPTEKS yang berorierentasi pada kecakapan hidup (life skills) (KK1)
+  - Row 18: Capaian Pembelajaran  (CP), Kemampuan akhir tiap tahapan belajar (Sub-CPMK), 
+  - Row 19: Capaian Pembelajaran  (CP), Sub-CPMK1, Mahasiswa mengenal dan memahami konsep dasar logika matematika
+  - Row 20: Capaian Pembelajaran  (CP), Sub-CPMK2, Mahasiswa mengenal dan memahami berbagai macam kalimat dalam matematika (kalimat terbuka, kalimat tertutup, pernyataan, bukan pernyataan)
+  - Row 21: Capaian Pembelajaran  (CP), Sub-CPMK3, Mahasiswa memahami operasi logika dan tabel kebenaran
+  - Row 22: Capaian Pembelajaran  (CP), Sub-CPMK4, Mahasiswa memahami nilai kebenaran suatu pernyataan
+  - Row 23: Capaian Pembelajaran  (CP), Sub-CPMK5, Mahasiswa memahami konsep dan menyelesaikan masalah matematika berkuantor
+  - Row 24: Capaian Pembelajaran  (CP), Sub-CPMK6, Mahasiswa menyusun kalimat matematika dari suatu pernyataan
+  - Row 25: Capaian Pembelajaran  (CP), Sub-CPMK7, Mahasiswa menerapkan konsep tautologi, kontradiksi, dan kontingensi dalam menyelesaikan masalah matematika
+  - Row 26: Capaian Pembelajaran  (CP), Sub-CPMK8, Mahasiswa menarik kesimpulan dengan modus ponens, modus tollens, dan silogisme
+  - Row 27: Capaian Pembelajaran  (CP), Sub-CPMK9, Mahasiswa menggambar dan mengimplementasikan diagram venn untuk menyelesaikan masalah matematika
+  - Row 28: Capaian Pembelajaran  (CP), Sub-CPMK10, Mahasiswa menarik kesimpulan menggunakan silogisme kategorik, hipotetik, alternatif, entimen
+  - Row 29: Capaian Pembelajaran  (CP), Sub-CPMK11, Mahasiswa memahami dan menyebutkan perbedaan disjungtif, saling lepas, saling bebas, saling asing
+  - Row 30: Capaian Pembelajaran  (CP), Sub-CPMK12, Mahasiswa membuktikan suatu pernyataan dengan pembuktian langsung
+  - Row 31: Capaian Pembelajaran  (CP), Sub- CPMK13, Mahasiswa membuktikan suatu pernyataan dengan pembuktian tidak langsung (kontradiksi dan kontraposisi)
+  - Row 32: Capaian Pembelajaran  (CP), Korelasi CPL terhadap Sub-CPMK, 
+  - Row 33: , Sub-CPMK CPL, 1                2, 3                  4, 5               6, 7                8, 9               10, 11            12        13
+  - Row 34: , CPL1, v
+  - Row 35: , CPL2, v
+  - Row 36: , CPL3, v
+  - Row 37: , CPL4, v
+  - Row 38: , CPL 5, v, v              v         v
+  - Row 39: Deskripsi Singkat MK, Logika Matematika merupakan matakuliah yang mempelajari hakikat logika matematika dan dapat menerapkan berpikir logis dalam menyelesaikan permasalahan. Selain itu matakuliah ini membahas berbagai macam kalimat baik tunggal maupun majemuk, operasi logika, pernyataan, bukan pernyataan, tabel kebenaran, tautologi, kontradiksi, kontingensi, kuantor, sampai dengan penarikan kesimpulan hingga pembuktian baik langsung maupun tidak langsung.
+  - Row 40: Bahan Kajian: Materi, Kalimat tunggal, kalimat majemuk, operasi logika, pernyataan, bukan pernyataan, nilai kebenaran, tabel kebenaran, tautologi, kontradiksi, kontingensi, kuantor, penarikan kesimpulan, pembuktian langsung, pembuktian tidak langsung (kontradiksi dan kontraposisi).
+  - Row 41: Penilaian, 
+  - Row 42: Pembelajaran, 
+  - Row 43: Pustaka, Utama :, 
+  - Row 44: Pustaka, REFERENSI BUKU Bain.J.Lee (1992). Introduction to probability and Mathematical Statistics. California: Duxbury Press. Hogg,R.v. and Craig, A.A.(1978).Introduction to Mathematical Statistics.New York: Macmillan Publishing Co.Inc. J.E.Freud and R.E. Walpole (1980).Mathematical Statistics.New Jersey,Englewood Cliffs:Prentice Hall. R.R.Stoll (1976). Set Theory and Logic. New Delhi: Eurosia Publisihing House (PVT) Lid. P. Supper (1961). Axiomatic Set Theory. Priceton, New Jersey: D.Van Nostrand Inc. ------------ (1967). Introduction to Logic. Priceton, New Jersey: D. Van Nostrand Inc. Pudjohartono, Sugiarto. 2022. Belajar Matematika Itu Menata. Benarkah? Yogyakarta: Sanata Darma University Press. Internet  REFERENSI JURNAL INTEGRASI PENELITIAN DAN PKM DOSEN DALAM PEMBELAJARAN Kristanti, Dian dan Pia Yunidar. 2021 Meningkatkan Kreativitas Menggunakan Pendekatan Contextual Teaching and Learning pada Siswa Kelas IV SD Negeri Suak Geudubang Kecamatan Samatiga. Jurnal Genta Mulia. Volume 12 Nomor 2. https://ejournal.stkipbbm.ac.id/index.php/gm/article/view/693.  Kristanti, Dian. 2020. Meningkatkan Motivasi Belajar Siswa Kelas VIII melalui Penerapan Contextual Teaching Learning (CTL) pada Materi Persamaan Garis Lurus Kelas VIII SMP Negeri 3 Teunom. Jurnal Genta Mulia. Volume 11 Nomor 1. https://www.ejournal.stkipbbm.ac.id/index.php/gm/article/view/397.
+  - Row 45: Pustaka, Pendukung :, 
+  - Row 46: Pustaka, 
+  - Row 47: Media Pembelajaran, Perangkat Lunak, Perangkat Keras
+  - Row 48: Media Pembelajaran, Microsoft word, PPT, PDF, dll, Laptop, LCD Proyektor
+  - Row 49: Dosen Pengampu, Dian Kristanti, M.Pd.
+  - Row 50: Matakuliah prasyarat, 
+  - Row 51: Mg Ke-, Kemampuan akhir tiap tahapan belajar (Sub-CPMK), Penilaian, Bentuk Pembelajaran, Metode Pembelajaran, Penugasan Mahasiswa, [ Estimasi Waktu], Materi Pembelajaran [Pustaka], Bobot Pen ilaian (%)
+  - Row 52: Mg Ke-, Kemampuan akhir tiap tahapan belajar (Sub-CPMK), Indikator, Kriteria&Bentuk, Luring (offline), Daring (online), Materi Pembelajaran [Pustaka], Bobot Pen ilaian (%)
+  - Row 53: (1), (2), (3), (4), (5), (6), (7), (8)
+  - Row 54: 1, Mahasiswa mengenal logika matematika dan mengetahui rencana pelaksanaan perkuliahan, Memahami gambaran umum mengenai logika matematika dan RPS, Kriteria: Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: pengenalan logika matematika  Pustaka: A1, 4%
+  - Row 55: 2, Mahasiswa memahami definisi dan contoh kalimat terbuka, kalimat tertutup, pernyataan, dan bukan pernyataan, Menyebutkan contoh kalimat terbuka, kalimat tertutup, pernyataan, dan bukan pernyataan dalam bidang matematika, Kriteria: Tes & Non-Tes  Bentuk Penilaian: Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: Kalimat terbuka, kalimat tertutup, pernyataan, dan bukan pernyataan Pustaka: A1, A2, 4%
+  - Row 56: 3, Mahasiswa memahami definisi dan penggunaan operasi logika dan tabel kebenaran, Menuliskan berbagai operasi logika dan tabel kebenaran, Kriteria: Tes & Non-Tes  Bentuk Penilaian: Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: Operasi logika dan tabel kebenaran Pustaka: A4, A6, 4%
+  - Row 57: 4, Mahasiswa memahami konsep dan dapat menentukan nilai kebenaran suatu pernyataan, Menentukan nilai kebenaran suatu pernyataan, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: Kebenaran suatu pernyataan Pustaka: A4, A1, 4%
+  - Row 58: 5, Mahasiswa memahami konsep bentuk-bentuk pernyataan, Menuliskan berbagai bentuk-bentuk pernyataan, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: Bentuk-bentuk pernyataan  Pustaka: A4, A2, 4%
+  - Row 59: 6, Mahasiswa memahami konsep dan contoh pernyataan berkuantor, Menyebutkan perbedaan konsep kuantor universal, kuantor eksistensial, pernyataan berkuantor, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, MEMONITOR KERJA MAHASISWA DAN KEMAJUAN PROYEK Memonitor aktivitas mahasiswa selama penyelesaian proyek Memberikan kesempatan kelompok untuk mempresentasikan progress penyelesaian proyek Membimbing diskusi hasil presentasi 2 X 50, -, Materi: Kuantor universal, kuantor eksistensial, pernyataan berkuantor Pustaka: A1, A2, 5%
+  - Row 60: 7, Mahasiswa dapat menyusun model atau kalimat matematika dari suatu penyataan, Menyusun kalimat matematika dari suatu pernyataan, Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, MEMONITOR KERJA MAHASISWA DAN KEMAJUAN PROYEK Memonitor aktivitas mahasiswa selama penyelesaian proyek b. Memberikan kesempatan kelompok untuk mempresentasikan progress penyelesaian proyek c. Membimbing 2 X 50, -, Materi: Kalimat matematika  Pustaka: A2, A7, 5%
+  - Row 61: 8, Evaluasi Tengah Semester / UjianTengah Semester, 15%
+  - Row 62: 9, Mahasiswa memahami konsep tautologi, kontradiksi, dan kontingensi, Menyelesaikan permasalahan matematika tentang tautologi, kontradiksi, kontingensi, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, MELAKUKAN PENILAIAN HASIL KERJA (PRODUK) Mahasiswa mempresentasika kemajuan proyek masing-masing Mengevaluasi kemajuan masing- masing mahasiswa Memberikan umpan baik tentang tingkat pemahaman yang sudah dicapai mahasiswa Menyusun strategi pembelajaran berikutnya 2 X 50, -, Materi: Tautologi, kontradiksi, kontingensi Pustaka: A1, A6, 5%
+  - Row 63: 10, Mahasiswa memahami konsep modus ponens, modus tollens, dan silogisme, Menarik kesimpulan dengan modus ponens, modus tollens, dan silogisme, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, -Metode direct instruction -Diskusi  -Tanya Jawab  2 X 50, -, Materi: Modus ponens, modus tollens, dan silogisme Pustaka: A3, A5, 5%
+  - Row 64: 11, Mahasiswa memahami konsep diagram venn dan dapat menerapkannya dalam penyelesaian masalah, Menggambar dan mengimplementasikan diagram venn untuk menyelesaikan masalah matematika, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Aktifitas Partisipasif, Penilaian Hasil Project / Penilaian Produk, MENGEVALUASI PENGALAMAN (PROSES DAN PRODUK) Refleksi aktivitas dan produk proyek Mendiskusikan hasil refleksi dikaitkan dengan permasalahan yang dipecahkan melalui proyek 2 X 50, -, Materi: Diagram venn Pustaka: A1, A2, A3, 4%
+  - Row 65: 12, Mahasiswa memahami konsep dan contoh silogisme kategorik, hipotetik, alternatif, entimen, Menarik kesimpulan menggunakan silogisme kategorik, hipotetik, alternatif, entimen, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Penilaian Hasil Project / Penilaian Produk, MENGEVALUASI PENGALAMAN (PROSES DAN PRODUK) Refleksi aktivitas dan produk proyek Mendiskusikan hasil refleksi dikaitkan dengan permasalahan yang dipecahkan melalui proyek 2 X 50, -, Materi: Silogisme kategorik, hipotetik, alternatif, entimen Pustaka: A5, A6, 4%
+  - Row 66: 13, Mahasiswa memahami konsep dan contoh disjungtif, saling lepas, saling bebas, saling asing, Memahami dan menyebutkan perbedaan disjungtif, saling lepas, saling bebas, saling asing, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Penilaian Hasil Project / Penilaian Produk, MENGEVALUASI PENGALAMAN (PROSES DAN PRODUK) Refleksi aktivitas dan produk proyek  Mendiskusikan hasil refleksi dikaitkan dengan permasalahan yang dipecahkan melalui proyek 2 X 50, -, Materi: Disjungtif, saling lepas, saling bebas, saling asing Pustaka: A7, 4%
+  - Row 67: 14, Mahasiswa memahami konsep dan dapat melakukan berbagai pembuktian matematika langsung, Menuliskan pembuktian langsung dari suatu pernyataan, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Penilaian Hasil Project / Penilaian Produk, MENGEVALUASI PENGALAMAN (PROSES DAN PRODUK) Refleksi aktivitas dan produk proyek  Mendiskusikan hasil refleksi dikaitkan dengan permasalahan yang dipecahkan melalui proyek 2 X 50, -, Materi: Pembuktian langsung Pustaka: A7, 4%
+  - Row 68: 15, Mahasiswa memahami konsep dan dapat melakukan berbagai pembuktian matematika tidak langsung, Menuliskan pembuktian tidak langsung (kontradiksi dan kontraposisi) dari suatu pernyataan, Kriteria: Tes & Non-Tes  Bentuk Penilaian : Penilaian Hasil Project / Penilaian Produk, MENGEVALUASI PENGALAMAN (PROSES DAN PRODUK) Refleksi aktivitas dan produk proyek  Mendiskusikan hasil refleksi dikaitkan dengan permasalahan yang dipecahkan melalui proyek 2 X 50, -, Materi: Pembuktian tidak langsung (kontradiksi dan kontraposisi) Pustaka: A7, 4%
+  - Row 69: 16, Evaluasi Akhir Semester / Ujian Akhir Semester, 25%
+### Table 2
+- Rows: 2
+- Columns: 2
+  - Row 0: Diperiksa oleh  Ketua Program Studi, Disusun oleh Dosen Pengampu Mata kuliah
+  - Row 1: Dazrullisa, M.Pd. NIDN.  1311129001, Dian Kristanti, M.Pd NIDN. 1330058901

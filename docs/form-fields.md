@@ -1,0 +1,25 @@
+# Form Fields
+
+- 13 Maret 2024
+- 2
+- BOBOT (sks) 2 SKS
+- Dazrullisa, M.Pd. NIDN.  1311129001
+- Dian Kristanti, M.Pd NIDN. 1330058901
+- Diperiksa oleh  Ketua Program Studi
+- Disusun oleh Dosen Pengampu Mata kuliah
+- KODE
+- Ketua Program Studi
+- Kode Dokumen RPS-    /PMAT/FKIP/UNCM/2025
+- Koordinator RMK
+- LOGIKA MATEMATIKA
+- MATA KULIAH (MK)
+- MKK209
+- Mata Kuliah Keahlian
+- OTORISASI
+- P=0
+- Pengembang RPS
+- RENCANA PEMBELAJARAN SEMESTER
+- Rumpun MK
+- SEMESTER
+- T=2
+- Tanggal Penyusunan

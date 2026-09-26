@@ -1,0 +1,97 @@
+# ========================
+# Deployment Symlinks & VPS Artifacts
+# ========================
+current
+releases/
+
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ========================
+# Build Artifacts
+# ========================
+rps-form-app/apps/api/dist/
+rps-form-app/apps/web/dist/
+web_build.zip
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.local
+.env.production
+.env.*.local
+*.env
+
+# ========================
+# Database (SQLite)
+# ========================
+rps-form-app/prisma/dev.db
+rps-form-app/prisma/dev.db-journal
+rps-form-app/prisma/*.db-shm
+rps-form-app/prisma/*.db-wal
+# Keep production DB on VPS, not in repo
+*.sqlite
+*.sqlite-journal
+
+# ========================
+# Storage: Generated Files
+# ========================
+rps-form-app/storage/exports/
+rps-form-app/storage/uploads/
+# Keep logs tracked (JSONL logs are useful history)
+# rps-form-app/storage/logs/  <-- intentionally tracked
+
+# ========================
+# OS Files
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# IDE & Editor
+# ========================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ========================
+# TypeScript
+# ========================
+*.tsbuildinfo
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+!rps-form-app/storage/logs/
+
+# ========================
+# Prisma
+# ========================
+# Migrations SHOULD be tracked
+# prisma/migrations/  <-- intentionally tracked
+
+# ========================
+# Test Artifacts
+# ========================
+tests/results/
+coverage/
+.nyc_output/
+
+# ========================
+# Deployment Temp
+# ========================
+fix_server.php

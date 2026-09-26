@@ -1,0 +1,231 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String   @unique
+  password  String   @default("password123")
+  role      String   @default("USER") // "ADMIN", "DOSEN", "USER"
+  avatar    String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  createdMeetings MeetingNote[] @relation("MeetingAuthor")
+  assignedTodos   TodoItem[]    @relation("AssignedTodos")
+  createdTodos    TodoItem[]    @relation("CreatedTodos")
+  assignedBugs    BugReport[]   @relation("BugAssignee")
+}
+
+model MeetingNote {
+  id          String     @id @default(uuid())
+  title       String
+  meetingDate DateTime   @default(now())
+  location    String?
+  attendees   String     // JSON array of attendee objects/names
+  content     String     // WYSIWYG HTML or rich text
+  authorId    String?
+  author      User?      @relation("MeetingAuthor", fields: [authorId], references: [id], onDelete: SetNull)
+  todos       TodoItem[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  @@index([meetingDate])
+  @@index([createdAt])
+}
+
+model TodoItem {
+  id             String       @id @default(uuid())
+  title          String
+  description    String?
+  meetingNoteId  String?
+  meetingNote    MeetingNote? @relation(fields: [meetingNoteId], references: [id], onDelete: Cascade)
+  priority       String       @default("P3") // "P1", "P2", "P3", "P4", "P5"
+  status         String       @default("TODO") // "TODO", "IN_PROGRESS", "REVIEW", "DONE"
+  dueDate        DateTime?
+  assignedToId   String?
+  assignedTo     User?        @relation("AssignedTodos", fields: [assignedToId], references: [id], onDelete: SetNull)
+  assignedToName String?
+  createdById    String?
+  createdBy      User?        @relation("CreatedTodos", fields: [createdById], references: [id], onDelete: SetNull)
+  parentId       String?
+  parent         TodoItem?    @relation("SubTasks", fields: [parentId], references: [id], onDelete: Cascade)
+  subTasks       TodoItem[]   @relation("SubTasks")
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@index([status])
+  @@index([priority])
+  @@index([meetingNoteId])
+  @@index([assignedToId])
+  @@index([parentId])
+}
+
+model BugReport {
+  id              String   @id @default(uuid())
+  brpCode         String   @unique // e.g. "BRP-2026-001"
+  routePath       String
+  description     String
+  type            String   @default("bug") // "bug", "feature_request", "general"
+  severity        String   @default("MAJOR") // "CRITICAL", "MAJOR", "MINOR", "TRIVIAL"
+  status          String   @default("PENDING") // "PENDING", "IN_PROGRESS", "FIXED", "WONT_FIX"
+  screenshotUrl   String?
+  parentBugId     String?
+  metadataJson    String?  // JSON string: breadcrumbs, networkErrors, consoleCritical, browser, performance
+  resolutionNotes String?
+  resolvedAt      DateTime?
+  reporterEmail   String?
+  reporterRole    String?  @default("DOSEN")
+  source          String?  // e.g., "frontend", "backend", "android", "cron"
+  vibeId          String?  // Optional relation to a vibe or external identifier
+  assignedToId    String?
+  assignedTo      User?    @relation("BugAssignee", fields: [assignedToId], references: [id], onDelete: SetNull)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([status])
+  @@index([severity])
+  @@index([type])
+  @@index([createdAt])
+  @@index([assignedToId])
+}
+
+model RpsDocument {
+  id                  String   @id @default(uuid())
+  title               String
+  courseName          String
+  courseCode          String
+  status              String   @default("DRAFT")
+  templateVersion     String   @default("1.0")
+  dataJson            String   // Stored as JSON string
+  completionPercentage Int     @default(0)
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  aiInteractions      AiInteractionLog[]
+}
+
+model Template {
+  id                String   @id @default(uuid())
+  name              String
+  filePath          String
+  version           String
+  isActive          Boolean  @default(true)
+  placeholderSchema String   // JSON schema
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// ==========================================
+// R2: AI DEVELOPER EXPERIENCE & ECOSYSTEM
+// ==========================================
+
+model AiAgent {
+  id           String         @id @default(uuid())
+  name         String         // e.g. "Gemini-Explorer-2", "Cursor-Dosen-Assistant"
+  platform     String         // e.g. "antigravity", "cursor", "cli", "open-webui"
+  apiKeyHash   String         @unique
+  role         String         @default("AGENT_CONTRIBUTOR") // AGENT_READONLY, AGENT_CONTRIBUTOR, AGENT_ADMIN
+  isActive     Boolean        @default(true)
+  metadata     String?        // JSON: capabilities, model version, system prompt hash
+  lastActiveAt DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+
+  interactions AiInteractionLog[]
+  errorLogs    AiErrorLog[]
+  feedbacks    AiFeedback[]
+  learnedRules AiLearnedRule[]
+}
+
+model AiInteractionLog {
+  id              String       @id @default(uuid())
+  agentId         String?
+  agent           AiAgent?     @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  rpsDocumentId   String?
+  rpsDocument     RpsDocument? @relation(fields: [rpsDocumentId], references: [id], onDelete: SetNull)
+  traceId         String       @default(uuid()) // Correlation ID for tracing
+  action          String       // e.g. "context_introspection", "rps.update_section", "export_docx"
+  promptContext   String?      // Context provided to the agent
+  requestPayload  String?      // Input arguments (JSON string)
+  responsePayload String?      // Output generated (JSON string)
+  tokensUsed      Int?         @default(0)
+  executionMs     Int          // Execution duration in milliseconds
+  status          String       // "SUCCESS", "FAILED", "PARTIAL", "REJECTED"
+  errorMessage    String?
+  createdAt       DateTime     @default(now())
+
+  errorLogs       AiErrorLog[]
+  feedbacks       AiFeedback[]
+
+  @@index([action])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model AiErrorLog {
+  id               String            @id @default(uuid())
+  interactionId    String?
+  interaction      AiInteractionLog? @relation(fields: [interactionId], references: [id], onDelete: SetNull)
+  agentId          String?
+  agent            AiAgent?          @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  errorType        String            // "DOCX_TEMPLATE_ERROR", "VALIDATION_MISMATCH", "DB_QUERY_FAILURE", "LIBREOFFICE_TIMEOUT"
+  severity         String            @default("ERROR") // "WARNING", "ERROR", "CRITICAL"
+  message          String            // Error summary
+  stackTrace       String?           // Complete error stack trace
+  contextData      String?           // JSON of payload/parameters that caused the error
+  reproductionStep String?           // Steps to reproduce
+  attemptedFix     String?           // Fix proposed or attempted by AI
+  resolved         Boolean           @default(false)
+  resolvedBy       String?           // "HUMAN", "AI_AGENT", "AUTO_REPAIR", "PENDING"
+  resolvedAt       DateTime?
+  resolutionNotes  String?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+
+  @@index([errorType])
+  @@index([resolved])
+}
+
+model AiFeedback {
+  id               String            @id @default(uuid())
+  interactionId    String?
+  interaction      AiInteractionLog? @relation(fields: [interactionId], references: [id], onDelete: SetNull)
+  agentId          String?
+  agent            AiAgent?          @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  rpsDocumentId    String?
+  userId           String?           // Lecturer ID if human feedback
+  rating           Int               // 1 to 5 (or -1/1 for thumbs down/up)
+  feedbackCategory String            // "CONTENT_QUALITY", "TAXONOMY_ACCURACY", "DOCX_FORMATTING", "CODE_BUG"
+  userCorrection   String?           // Human lecturer corrected value
+  aiOutputOriginal String?           // Original AI suggestion
+  comments         String?           // Qualitative remarks
+  createdAt        DateTime          @default(now())
+}
+
+model AiLearnedRule {
+  id                   String    @id @default(uuid())
+  agentId              String?
+  agent                AiAgent?  @relation(fields: [agentId], references: [id], onDelete: SetNull)
+  category             String    // "DOCX_EXPORT", "RPS_PEDAGOGY", "DATABASE_INTEGRITY", "ERROR_AVOIDANCE"
+  ruleCode             String    @unique // e.g. "RULE_DOCX_NO_VERTICAL_MERGE_LOOP"
+  title                String    // Descriptive rule title
+  description          String    // Detailed explanation of mistake & rationale
+  triggerCondition     String    // When to apply (e.g. "When generating 16-week matrix")
+  recommendedFix       String    // Concrete avoidance/fix pattern
+  confidenceScore      Float     @default(1.0) // 0.0 to 1.0 based on validation count
+  occurrencesPrevented Int       @default(0)
+  sourceErrorId        String?   // Reference to originating AiErrorLog
+  isActive             Boolean   @default(true)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  @@index([category])
+  @@index([isActive])
+}

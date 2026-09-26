@@ -1,0 +1,21 @@
+[Unit]
+Description=Dunia_Kampus RPS API Daemon (Port 3005)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/kampus-dosen/current
+Environment=NODE_ENV=production
+Environment=PORT=3005
+Environment=DATABASE_URL="file:/var/www/kampus-dosen/shared/database.sqlite"
+Environment=STORAGE_DIR="/var/www/kampus-dosen/shared/storage"
+ExecStart=/usr/bin/node /var/www/kampus-dosen/current/apps/api/dist/server.js
+Restart=always
+RestartSec=5
+StandardOutput=append:/var/www/kampus-dosen/shared/logs/api-stdout.log
+StandardError=append:/var/www/kampus-dosen/shared/logs/api-stderr.log
+
+[Install]
+WantedBy=multi-user.target
