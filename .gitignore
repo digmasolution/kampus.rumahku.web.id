@@ -5,6 +5,18 @@ current
 releases/
 
 # ========================
+# Python Virtual Environment
+# ========================
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ========================
 # Node.js
 # ========================
 node_modules/
